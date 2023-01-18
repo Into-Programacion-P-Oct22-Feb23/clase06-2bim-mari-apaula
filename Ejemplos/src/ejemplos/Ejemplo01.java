@@ -33,6 +33,7 @@ public class Ejemplo01 {
         // between 0 (inclusive) and the specified value (exclusive)
         int valorAleatorio = numerosAleatorios.nextInt(5);
         return valorAleatorio;
+        
     }
     
     public static int obtnerSuma(int a, int b){
