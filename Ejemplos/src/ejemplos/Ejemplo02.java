@@ -19,16 +19,21 @@ public class Ejemplo02 {
         // TODO code application logic here
         Scanner mpmq = new Scanner(System.in);
 
-        System.out.println("Ingresa el valor de rango");
+        System.out.println("Ingresa un valor");
         int rango = mpmq.nextInt();
-        
-        int valorA = obtenerNumero(rango); // 3
+        if (rango > 0){
+            int valorA = obtenerNumero(rango); // 3
         int valorB = obtenerNumero(rango); // 2
         int suma = obtnerSuma(valorA, valorB);
         System.out.printf("La suma de %d + %d es igual a: %d\n", 
                 valorA,
                 valorB,
                 suma);
+        }else{
+            System.out.println("Error");
+        }
+        
+        
     }
     
     public static int obtenerNumero(int a) {
